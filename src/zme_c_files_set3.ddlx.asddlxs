@@ -1,0 +1,77 @@
+@Metadata.layer: #CORE
+//@UI: { headerInfo: { typeName:       'File',
+//                     typeNamePlural: 'Files',
+//                     title:          { type: #STANDARD,
+//                                       label: 'Files',
+//                                       value: 'AttId' } },
+//             presentationVariant: [{ sortOrder: [{ by: 'AttId',
+//                                          direction: #ASC }],
+//                              visualizations: [{ type: #AS_LINEITEM }] }] }
+annotate entity Z_C_FILES_SET3 with
+{
+  @EndUserText.label: 'Att Id'
+  @UI: {lineItem: [{ position: 10,
+               importance: #LOW }],
+  identification: [{ position: 10  } ] }
+  AttID;
+  @EndUserText.label: 'Order Id'
+  @UI: {lineItem: [{ position: 20,
+               importance: #LOW }],
+  identification: [{ position: 20  } ] }
+  OrderID;
+  @EndUserText.label: 'Sap Id'
+  @UI: {lineItem: [{ position: 30,
+               importance: #LOW }],
+  identification: [{ position: 30  } ] }
+  SapID;
+  @EndUserText.label: 'Employee Id'
+  @UI: {lineItem: [{ position: 40,
+               importance: #LOW }],
+  identification: [{ position: 40  } ] }
+  EmployeeID;
+  @EndUserText.label: 'File Name'
+  @UI: {lineItem: [{ position: 50,
+               importance: #LOW }],
+  identification: [{ position: 50  } ] }
+  FileName;
+  @EndUserText.label: 'Mime Type'
+  @UI: {lineItem: [{ position: 60,
+               importance: #LOW }],
+  identification: [{ position: 60  } ] }
+  MimeType;
+  @EndUserText.label: 'Media Content'
+  @UI: {lineItem: [{ position: 70,
+               importance: #LOW }],
+  identification: [{ position: 70  } ] }
+  MediaContent;
+  @UI: {lineItem: [{ position: 110,
+               importance: #LOW }],
+  identification: [{ position: 110  } ],
+  selectionField: [{ position: 110 }]}
+  @UI.hidden: true
+  localcreatedby;
+  @UI: {lineItem: [{ position: 120,
+               importance: #LOW }],
+  identification: [{ position: 120  } ],
+  selectionField: [{ position: 120 }]}
+  @UI.hidden: true
+  localcreatedat;
+  @UI: {lineItem: [{ position: 130,
+               importance: #LOW }],
+  identification: [{ position: 130  } ],
+  selectionField: [{ position: 130 }]}
+  @UI.hidden: true
+  locallastchangedby;
+  @UI: {lineItem: [{ position: 140,
+               importance: #LOW }],
+  identification: [{ position: 140  } ],
+  selectionField: [{ position: 140 }]}
+  @UI.hidden: true
+  locallastchangedat;
+  @UI: {lineItem: [{ position: 150,
+               importance: #LOW }],
+  identification: [{ position: 150  } ],
+  selectionField: [{ position: 150 }]}
+  @UI.hidden: true
+  lastchangedat;
+}

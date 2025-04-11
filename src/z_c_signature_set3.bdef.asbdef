@@ -1,0 +1,8 @@
+projection;
+
+define behavior for Z_C_SIGNATURE_SET3 alias Files
+{
+  use create;
+  use update;
+  use delete;
+}

@@ -1,0 +1,64 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName:       'Incident',
+                     typeNamePlural: 'Incidents',
+                     title:          { type: #STANDARD,
+                                       label: 'Incidents',
+                                       value: 'IncidentID' } },
+             presentationVariant: [{ sortOrder: [{ by: 'IncidentID',
+                                          direction: #ASC }],
+                              visualizations: [{ type: #AS_LINEITEM }] }] }
+annotate entity Z_C_INCIDENT_SET3 with
+{
+  @EndUserText.label: 'Incident ID'
+  @UI: {lineItem: [{ position: 20,
+                     importance: #MEDIUM }],
+  identification: [{ position: 20  } ],
+  selectionField: [{ position: 20 }]}
+  IncIDenceID;
+  @EndUserText.label: 'Sap ID'
+  @UI: {lineItem: [{ position: 30,
+               importance: #LOW }],
+  identification: [{ position: 30  } ] }
+  SapID;
+  @EndUserText.label: 'Employee Id'
+  @UI: {lineItem: [{ position: 40,
+               importance: #LOW }],
+  identification: [{ position: 40  } ] }
+  EmployeeID;
+  @EndUserText.label: 'Creation Date'
+  @UI: {lineItem: [{ position: 50,
+               importance: #LOW }],
+  identification: [{ position: 50  } ] }
+  CreationDate;
+  @EndUserText.label: 'Employee Date X'
+  @UI: {lineItem: [{ position: 60,
+               importance: #LOW }],
+  identification: [{ position: 60  } ] }
+  CreationDateX;
+  @EndUserText.label: 'Type'
+  @UI: {lineItem: [{ position: 70,
+               importance: #LOW }],
+  identification: [{ position: 70  } ] }
+  Type;
+  @EndUserText.label: 'Type X'
+  @UI: {lineItem: [{ position: 80,
+               importance: #LOW }],
+  identification: [{ position: 80  } ] }
+  TypeX;
+  @EndUserText.label: 'Reason'
+  @UI: {lineItem: [{ position: 90,
+               importance: #LOW }],
+  identification: [{ position: 90  } ] }
+  Reason;
+  @EndUserText.label: 'Reason X'
+  @UI: {lineItem: [{ position: 100,
+               importance: #LOW }],
+  identification: [{ position: 100  } ] }
+  ReasonX;
+  /* Associations */
+  @UI.hidden: true
+  _Files;
+  @UI.hidden: true
+  _Signature;
+
+}

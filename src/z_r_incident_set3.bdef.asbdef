@@ -1,0 +1,8 @@
+unmanaged implementation in class zbp_r_incident_set3 unique;
+
+define behavior for Z_R_INCIDENT_SET3 alias Incident
+{
+  create;
+  update;
+  delete;
+}
